@@ -1,0 +1,131 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="resume-section" id="about">
+    <div class="resume-section-content">
+        @foreach (About item in Model.Abouts)
+        {
+            <h1 class="mb-0">
+                @item.Name
+                <span class="text-primary">@item.Surname</span>
+            </h1>
+            <div class="subheading mb-5">
+                @item.Address · @item.Number · @item.Email
+                <a href="mailto:name@email.com">
+                
+                </a>
+            </div>
+            <p class="lead mb-5">@item.Desc</p>
+
+        }
+        <div class="social-icons">
+            <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+</section>
+<hr class="m-0" />
+<!-- Experience-->
+<section class="resume-section" id="experience">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Experience</h2>
+        @foreach (Experience item in Model.Experiences)
+	{
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">@item.Title1</h3>
+                <div class="subheading mb-3">@item.Title2</div>
+                <p>@item.Desc</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">@item.Date</span></div>
+        </div>
+		 
+	}
+        
+    </div>
+</section>
+<hr class="m-0" />
+<!-- Education-->
+<section class="resume-section" id="education">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Education</h2>
+        @foreach (Education item in Model.Educations)
+	{
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">@item.Title1</h3>
+                <div class="subheading mb-3">@item.Title2</div>
+                <div>@item.Desc</div>
+                <p>@item.Context</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">@item.Date</span></div>
+        </div>
+		 
+	}
+        
+    </div>
+</section>
+<hr class="m-0" />
+<!-- Skills-->
+<section class="resume-section" id="skills">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Skills</h2>
+        <div class="subheading mb-3">Programming Languages & Tools</div>
+        <ul class="list-inline dev-icons">
+            @foreach (Tools item in Model.Tools)
+            {
+            <li class="list-inline-item"><img src="~/assets/img/@item.Image" style="width:50px; height:50px" alt="Alternate Text" /></li>
+
+            }
+            
+        </ul>
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+            @foreach (Work item in Model.Works)
+	{
+		 
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                @item.Desc
+            </li>
+	}
+            
+        </ul>
+    </div>
+</section>
+<hr class="m-0" />
+<!-- Interests-->
+<section class="resume-section" id="interests">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Interests</h2>
+        @foreach (Interest item in Model.Interests)
+        {
+
+            <p>@item.Desc</p>
+
+        }
+    </div>
+</section>
+<hr class="m-0" />
+<!-- Awards-->
+<section class="resume-section" id="awards">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Awards & Certifications</h2>
+        <ul class="fa-ul mb-0">
+            @foreach (Award item in Model.Awards)
+	{
+		 
+            <li>
+                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                @item.Desc
+            </li>
+	}
+            
+        </ul>
+    </div>
+</section>
+
