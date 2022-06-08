@@ -1,6 +1,6 @@
-﻿@model List<About>
+﻿@model Work
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Edit";
 }
 
 <header class="main-header navbar">
@@ -58,78 +58,42 @@
     </div>
 </header>
 <section class="content-main">
-    <div class="content-header">
-        <div>
-            <h2 class="content-title card-title">About</h2>
-            <p>Add, edit or delete a about</p>
-        </div>
-        <div>
-            <input type="text" placeholder="Search Categories" class="form-control bg-white" />
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                
-                <div class="col-md-9">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" />
-                                        </div>
-                                    </th>
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Surname</th>
-                                    <th>Address</th>
-                                    <th>Number</th>
-                                    <th>Email</th>
-                                    <th>Desc</th>
-                                    <th class="text-end">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var item in Model)
-                                {
-                                <tr>
-                                    <td class="text-center">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" />
-                                        </div>
-                                    </td>
-                                    <td>@item.Id</td>
-                                    <td><b>@item.Name</b></td>
-                                    <td>@item.Surname</td>
-                                    <td>@item.Address</td>
-                                    <td>@item.Number</td>
-                                    <td>@item.Email</td>
-                                    <td>@item.Desc</td>
-                                    <td class="text-end">
-                                        <div class="dropdown">
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light rounded btn-sm font-sm"> <i class="material-icons md-more_horiz"></i> </a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" asp-controller="About" asp-action="Edit" asp-route-id="@item.Id">Edit info</a>
-                                                <a class="dropdown-item text-danger" asp-controller="About" asp-action="Remove" asp-route-id="@item.Id">Remove</a>
-                                            </div>
-                                        </div>
-                                        <!-- dropdown //end -->
-                                    </td>
-                                </tr>
-                                }
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- .col// -->
+    <div class="row">
+        <div class="col-9">
+            <div class="content-header">
+                <h2 class="content-title">Add New Product</h2>
             </div>
-            <!-- .row // -->
         </div>
-        <!-- card body .// -->
+        <div class="col-lg-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>Basic</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-4">
+                            <label asp-for="Desc" class="form-label"></label>
+                            <input asp-for="Desc" placeholder="Type here" class="form-control" rows="4">
+                            <span class="text-danger" asp-validation-for="Desc"></span>
+                        </div>
+                        <div class="row">
+                        </div>
+                        <div class="mb-4 d-flex justify-content-end">
+                            <div>
+                                <button type="submit" class="btn btn-md rounded font-sm hover-up me-auto">Edit</button>
+                                <a asp-action="Index" class="btn btn-google rounded font-sm hover-up me-auto">Go Back</a>
+                            </div>
+                        </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+            <!-- card end// -->
+
+        </div>
+
     </div>
-    <!-- card .// -->
 </section>
 

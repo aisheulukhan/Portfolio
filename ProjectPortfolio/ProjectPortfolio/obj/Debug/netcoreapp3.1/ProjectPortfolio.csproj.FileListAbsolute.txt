@@ -316,3 +316,15 @@ C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug
 C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\ProjectPortfolio.dll
 C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\ProjectPortfolio.pdb
 C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\ProjectPortfolio.genruntimeconfig.cache
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Experience\Index.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Experience\Edit.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Education\Index.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Tools\Index.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Tools\Edit.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Work\Index.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Education\Edit.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Interest\Index.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Interest\Edit.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Award\Index.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Award\Edit.cshtml.g.cs
+C:\Users\tu7hnsxs1\Desktop\Portfolio\ProjectPortfolio\ProjectPortfolio\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Work\Edit.cshtml.g.cs

@@ -1,4 +1,4 @@
-﻿@model List<About>
+﻿@model List<Work>
 @{
     ViewData["Title"] = "Index";
 }
@@ -70,7 +70,17 @@
     <div class="card">
         <div class="card-body">
             <div class="row">
-                
+                <div class="col-md-3">
+                    <form method="post" asp-action="Create">
+                        <div class="mb-4">
+                            <label for="Desc" class="form-label">Desc</label>
+                            <input type="text" name="Desc" id="Desc" placeholder="Type here" class="form-control" />
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary">Create about</button>
+                        </div>
+                    </form>
+                </div>
                 <div class="col-md-9">
                     <div class="table-responsive">
                         <table class="table table-hover">
@@ -82,42 +92,32 @@
                                         </div>
                                     </th>
                                     <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Surname</th>
-                                    <th>Address</th>
-                                    <th>Number</th>
-                                    <th>Email</th>
-                                    <th>Desc</th>
+                                    <th>Image</th>
                                     <th class="text-end">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (var item in Model)
                                 {
-                                <tr>
-                                    <td class="text-center">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" />
-                                        </div>
-                                    </td>
-                                    <td>@item.Id</td>
-                                    <td><b>@item.Name</b></td>
-                                    <td>@item.Surname</td>
-                                    <td>@item.Address</td>
-                                    <td>@item.Number</td>
-                                    <td>@item.Email</td>
-                                    <td>@item.Desc</td>
-                                    <td class="text-end">
-                                        <div class="dropdown">
-                                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light rounded btn-sm font-sm"> <i class="material-icons md-more_horiz"></i> </a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" asp-controller="About" asp-action="Edit" asp-route-id="@item.Id">Edit info</a>
-                                                <a class="dropdown-item text-danger" asp-controller="About" asp-action="Remove" asp-route-id="@item.Id">Remove</a>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" />
                                             </div>
-                                        </div>
-                                        <!-- dropdown //end -->
-                                    </td>
-                                </tr>
+                                        </td>
+                                        <td>@item.Id</td>
+                                        <td><b>@item.Desc</b></td>
+                                        <td class="text-end">
+                                            <div class="dropdown">
+                                                <a href="#" data-bs-toggle="dropdown" class="btn btn-light rounded btn-sm font-sm"> <i class="material-icons md-more_horiz"></i> </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" asp-controller="Award" asp-action="Edit" asp-route-id="@item.Id">Edit info</a>
+                                                    <a class="dropdown-item text-danger" asp-controller="Award" asp-action="Remove" asp-route-id="@item.Id">Remove</a>
+                                                </div>
+                                            </div>
+                                            <!-- dropdown //end -->
+                                        </td>
+                                    </tr>
                                 }
 
                             </tbody>
